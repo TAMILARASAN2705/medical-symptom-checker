@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+}
+
+body {
+  background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 50%, #E2E8F0 100%);
+  color: rgb(0, 0, 0);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F3F4F6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9CA3AF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7280;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Button base styles */
+.btn {
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #3B82F6;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Card hover effects */
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Symptom button transitions */
+.symptom-btn {
+  transition: all 0.15s ease-in-out;
+}
+
+.symptom-btn:hover {
+  border-color: #64748B;
+}
+
+.symptom-btn.selected {
+  background-color: #E2E8F0;
+  border-color: #1E40AF;
+}
+
+/* Chatbot panel animation */
+.chatbot-panel {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Priority badge colors */
+.priority-low {
+  background-color: #E2E8F0;
+  border-color: #CBD5E1;
+  color: #1E40AF;
+}
+
+.priority-moderate {
+  background-color: #FEF3C7;
+  border-color: #FDE68A;
+  color: #92400E;
+}
+
+.priority-high {
+  background-color: #FEE2E2;
+  border-color: #FECACA;
+  color: #991B1B;
+}
