@@ -1,15 +1,16 @@
 # Medical Symptoms Pre-Checker
 
-A modern, interactive medical symptoms pre-checker web application built with React, featuring a landing page, symptom assessment form, results overview, and integrated AI chatbot.
+A modern, professional medical symptoms pre-checker web application built with React, featuring a stunning landing page, symptom assessment form, results overview, and AI-powered health chatbot.
 
 ## 🚀 Features
 
-- **Landing Page**: Professional hero section, overview cards, and medical disclaimers
-- **Symptom Checker**: Interactive form with 23 symptoms across 7 categories
-- **Results Analysis**: Priority-based assessment (Low/Moderate/High) with recommendations
-- **Floating Chatbot**: Always-available health assistant with smooth animations
-- **Responsive Design**: Mobile-first approach that works on all devices
-- **Modern UI**: Blue/teal gradient design with smooth micro-interactions
+- **Professional Landing Page**: Dark hero section with gradient backgrounds, feature cards, how-it-works section, and statistics
+- **Symptom Checker**: Interactive form with 23 symptoms across 7 categories with smooth animations
+- **Results Analysis**: Priority-based assessment (Low/Moderate/High) with personalized recommendations
+- **AI-Powered Chatbot**: Intelligent health assistant with fallback responses for common health topics
+- **Responsive Design**: Mobile-first approach that works seamlessly on all devices
+- **Professional UI**: Slate/emerald professional color scheme with smooth micro-interactions
+- **Privacy First**: No data collection, client-side only processing
 
 ## 📋 Tech Stack
 
@@ -22,8 +23,8 @@ A modern, interactive medical symptoms pre-checker web application built with Re
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd chatbot
+   git clone https://github.com/TAMILARASAN2705/medical-symptom-checker.git
+   cd medical-symptom-checker
    ```
 
 2. **Install dependencies**
@@ -31,23 +32,32 @@ A modern, interactive medical symptoms pre-checker web application built with Re
    npm install
    ```
 
-3. **Start the development server**
+3. **Configure environment variables (optional)**
+   Create a `.env` file in the root directory:
+   ```env
+   VITE_OPENAI_API_KEY=your_openai_api_key_here
+   ```
+   - Without this, the chatbot uses intelligent fallback responses
+   - With a valid OpenAI key, the chatbot provides real AI responses
+
+4. **Start the development server**
    ```bash
    npm run dev
    ```
 
-4. **Open your browser**
+5. **Open your browser**
    Navigate to `http://localhost:3000`
 
 ## 🎨 Design System
 
 ### Color Palette
-- **Primary Blue**: #2563EB, #3B82F6
-- **Secondary Teal**: #0D9488, #14B8A6
-- **Success Green**: #10B981, #059669
+- **Primary Slate**: #1E40AF, #2563EB (Professional blue)
+- **Secondary Emerald**: #047857, #059669 (Health green)
+- **Accent Cyan**: #0891B2, #06B6D4 (Modern accent)
+- **Background Slate**: #F8FAFC, #E2E8F0 (Professional grays)
 - **Warning Amber**: #D97706, #B45309
 - **Danger Red**: #DC2626, #B91C1C
-- **Neutral Grays**: #F9FAFB to #111827
+- **Dark Theme**: #0F172A, #1E293B (Professional dark)
 
 ### Typography
 - **Font**: Inter (Google Fonts)
@@ -156,16 +166,27 @@ chatbot/
 
 - Symptom history tracking (localStorage)
 - Export assessment as PDF
-- Real AI chatbot integration (OpenAI/Claude API)
+- Enhanced AI chatbot with real OpenAI integration (environment variable support included)
 - Doctor/clinic finder integration
 - Multi-language support
-- Dark mode toggle
 - User accounts & medical history
+- Telemedicine integration
+- Health dashboard with trends
 
 ## 📧 Support
 
-For questions or issues, please open an issue on the repository.
+- **GitHub Repository**: https://github.com/TAMILARASAN2705/medical-symptom-checker
+- **Issues**: Report bugs or request features via GitHub Issues
+- **Contributions**: Pull requests are welcome!
+
+## ⚠️ Important Notes
+
+- **Privacy**: This application does not collect or store any personal health data
+- **Security**: API keys should never be committed to version control
+- **Medical Disclaimer**: This tool provides general information only and is not a substitute for professional medical advice
 
 ---
 
 **Built with ❤️ for better health awareness**
+
+**Repository**: https://github.com/TAMILARASAN2705/medical-symptom-checker
